@@ -1,0 +1,19 @@
+.container {
+        background-image: url('assets/img/DSC03640.jpg');
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+}
+p {
+  backdrop-filter: contrast(0.5);
+}
+code {
+  backdrop-filter: contrast(0.15);
+}
+
+body {
+font-family: 'Great Vibes', serif;
+font-size: 48px;
+text-align: center;
+}
+
