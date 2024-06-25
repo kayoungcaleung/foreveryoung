@@ -1,0 +1,52 @@
+.background-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url("assets/img/DSC03640.jpg");  
+  background-size:cover;
+      width: 100vw;
+    height: 100vh;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+.gallery img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    object-fit: contain;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+} 
+.gallery figcaption {
+    text-align: center;
+    font-family: "centaur mt pro";
+    font-size: 26px;
+}
+body {
+font-family: 'Great Vibes', serif;
+    font-size: 44px;
+    text-align: center;
