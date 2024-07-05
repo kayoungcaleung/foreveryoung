@@ -1,13 +1,36 @@
 .background-image {
-  position: absolute;
+  background-position: 50% 50%;
+  position: relative;
+      width: 100vw;
+    height: 100vh;
   left: 0;
   right: 0;
   z-index: 1;
   display: block;
-  background-image: url("assets/img/DSC03640.jpg");  
+  /*background-image: url("assets/img/DSC03640.jpg");  */
   background-size:cover;
       width: 100vw;
     height: 100vh;
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+}
+
+.background-image-blur {
+  background-position: 50% 50%;
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-size:cover;
+      width: 100vw;
+  min-height: 100vh;
+  height: max-content;
   -webkit-filter: blur(10px);
   -moz-filter: blur(10px);
   -o-filter: blur(10px);
@@ -23,12 +46,14 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     padding: 20px;
+    height: 100%
 }
 .gallery img {
     max-width: 600px;
@@ -37,16 +62,60 @@
     border-radius: 8px;
     transition: transform 0.2s;
     object-fit: contain;
+    overflow-y: auto
 }
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 } 
+.gallery figure {
+    margin: 0;
+    max-width:600px;
+}
+
 .gallery figcaption {
     text-align: center;
-    font-family: "centaur mt pro";
+    font-family: "Cormorant", serif;
     font-size: 26px;
+    color: #ffffff;
+    backdrop-filter: contrast(40%);
+    color: white;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-family: "Great Vibes", serif;
+    font-size: 84px;
+    color: white;
 }
 body {
 font-family: 'Great Vibes', serif;
     font-size: 44px;
     text-align: center;
+    
+}
+--light-purple:#c4afdf;
+h1 {
+    font-family: 'Great Vibes', serif;
+    font-weight: bold;
+    font-size: 84px;
+    text-align: center;
+    line-height: 84px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Great Vibes', serif;
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+p {
+    color: black;
+}
+
+a {
+    color: #8a5a91;
+}
+
