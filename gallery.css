@@ -17,6 +17,13 @@
     max-width: calc(100vw - 0px);
     height: max-content;
 }
+.with-less-blur-backdrop {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    height: inherit;
+    width: inherit;
+    padding: 20px 0px;
+}
 
 .with-blur-backdrop {
     -webkit-backdrop-filter: blur(10px);
@@ -122,4 +129,5 @@ a {
     font-weight: normal;
     font-size: 36px;
     text-align: center;
+    text-decoration: none;
 }
