@@ -33,6 +33,13 @@
     padding: 20px 0px;
 }
 
+.with-more-blur-backdrop {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    height: inherit;
+    width: inherit;
+    padding: 20px 0px;
+}
 .content {
   left: 0;
   right: 0;
@@ -87,7 +94,6 @@ body {
 font-family: 'Great Vibes', serif;
     font-size: 44px;
     text-align: center;
-    
 }
 h1 {
     font-family: 'Great Vibes', serif;
@@ -127,7 +133,24 @@ a {
     color: #FCCCF6;
     font-family: 'Cormorant', serif;
     font-weight: normal;
-    font-size: 36px;
     text-align: center;
     text-decoration: none;
 }
+
+faqq {
+    color: #FCCCF6;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+}
+
+faqa {
+    color: white;
+    font-family: 'Cormorant', serif;
+    font-weight: normal;
+    line-height: 1.2;
+    font-size: 24px;
+    text-align: left; 
+    width: 100%;
+    display: block;
